@@ -1,0 +1,58 @@
+.block2{
+    
+    width: 95%;
+    height: 50vh;
+  
+}
+.block__text12{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 12px;
+/* identical to box height, or 120% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #999999;
+
+
+}
+.block__text22{
+    font-family: 'Tenor Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+
+/* or 120% */
+
+text-transform: uppercase;
+
+color: #000000;
+
+
+}
+
+.figma2{
+    margin-top: 5%;
+    width: 80%;
+}
+.block__text32{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #000000;
+
+
+}
+.block__img2{
+    max-width: 100%;
+}
