@@ -36,6 +36,9 @@ const figmaCardList = [
     text2: "Helmut Lang celebrates taxi drivers worldwide in latest campaign",
     text3: "By Alessandra Ortiz",
   },
+];
+
+const figmaCardList1 = [
   {
     img: img5,
     text1: "Photography",
@@ -53,6 +56,64 @@ const figmaCardList = [
     text1: "Photography",
     text2: "Helmut Lang celebrates taxi drivers worldwide in latest campaign",
     text3: "By Alessandra Ortiz",
+  },
+];
+
+const CardList = [
+  {
+    img: img1,
+    text1: "Photography",
+    text2: "Japan House opens in mountainside to foster peak creativity.",
+    text3: "By Reta Torphy",
+  },
+  {
+    img: img2,
+    text1: "Photography",
+    text2: "Helmut Lang celebrates taxi drivers worldwide in latest campaign",
+    text3: "By Alessandra Ortiz",
+  },
+  {
+    img: img7,
+    text1: "Architecture",
+    text2:
+      "Suzanne Saroff’s meticulously arranged photographs alter perceptions",
+    text3: "By Reta Torphy",
+  },
+  {
+    img: img8,
+    text1: "Architecture",
+    text2:
+      "Suzanne Saroff’s meticulously arranged photographs alter perceptions",
+    text3: "By Reta Torphy",
+  },
+];
+const CardList1 = [
+  {
+    img: img5,
+    text1: "Interactive Design",
+    text2: "London-based Yinka Iloris storytelling furniture",
+    text3: "By Annie Lueilwitz",
+  },
+  {
+    img: img6,
+    text1: "Graphic Design",
+    text2:
+      "Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck",
+    text3: "By Simeon Brekke",
+  },
+  {
+    img: img7,
+    text1: "Architecture",
+    text2:
+      "Suzanne Saroff’s meticulously arranged photographs alter perceptions",
+    text3: "By Reta Torphy",
+  },
+  {
+    img: img8,
+    text1: "Architecture",
+    text2:
+      "Suzanne Saroff’s meticulously arranged photographs alter perceptions",
+    text3: "By Reta Torphy",
   },
 ];
 function App() {
@@ -114,63 +175,49 @@ function App() {
               />
             );
           })}
-
+        </div>
+        <div className="main">
+          {figmaCardList1.map((element, index) => {
+            return (
+              <Figma
+                key={index}
+                img={element.img}
+                text1={element.text1}
+                text2={element.text2}
+                text3={element.text3}
+              />
+            );
+          })}
         </div>
         <hr />
         <div className="text">
           <p className="text__P">LATEST POSTS</p>
         </div>
         <div className="main2">
-          <Figma2
-            img={img1}
-            text1="Photography"
-            text2="Japan House opens in mountainside to foster peak creativity."
-            text3="By Reta Torphy"
-          />
-          <Figma2
-            img={img2}
-            text1="Photography"
-            text2="Helmut Lang celebrates taxi drivers worldwide in latest campaign"
-            text3="By Alessandra Ortiz"
-          />
-          <Figma
-            img={img3}
-            text1="Photography"
-            text2="Bowlcut launch a new summer collection that pays homage to “UK legends”"
-            text3="By Rosanna Ondricka"
-          />
-          <Figma
-            img={img4}
-            text1="Photography"
-            text2="Thousands of previously unseen photographs by Andy Warhol will be made public this Autumn"
-            text3="By Annie Lueilwitz"
-          />
+          {CardList.map((element, index) => {
+            return (
+              <Figma2
+                key={index}
+                img={element.img}
+                text1={element.text1}
+                text2={element.text2}
+                text3={element.text3}
+              />
+            );
+          })}
         </div>
         <div className="main2">
-          <Figma2
-            img={img5}
-            text1="Interactive Design"
-            text2="London-based Yinka Iloris storytelling furniture"
-            text3="By Annie Lueilwitz"
-          />
-          <Figma2
-            img={img6}
-            text1="Graphic Design"
-            text2="Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck"
-            text3="By Simeon Brekke"
-          />
-          <Figma2
-            img={img7}
-            text1="Architecture"
-            text2="Suzanne Saroff’s meticulously arranged photographs alter perceptions"
-            text3="By Reta Torphy"
-          />
-          <Figma2
-            img={img8}
-            text1="Architecture"
-            text2="Suzanne Saroff’s meticulously arranged photographs alter perceptions"
-            text3="By Reta Torphy"
-          />
+          {CardList1.map((element, index) => {
+            return (
+              <Figma2
+                key={index}
+                img={element.img}
+                text1={element.text1}
+                text2={element.text2}
+                text3={element.text3}
+              />
+            );
+          })}
         </div>
       </div>
     </>

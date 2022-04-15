@@ -99,9 +99,9 @@ color: #999999;
 .main2{
     
     width: 90.5%;
-    
+    border: 1px solid black;
     margin: auto;
-    height: 80vh;
+    height: 65vh;
     display: flex;
     justify-content: space-between;
 }
