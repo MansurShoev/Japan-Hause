@@ -219,6 +219,14 @@ function App() {
             );
           })}
         </div>
+        <div className="midleText">
+          <div className="midleText__p">
+            <p className="p">view all latest posts</p>
+          </div>
+        </div>
+        <div className="footer">
+          
+        </div>
       </div>
     </>
   );
