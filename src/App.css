@@ -142,4 +142,101 @@
 .footer {
   height: 50vh;
   background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.footer__block{
+    width: 80%;
+    height: 45vh;
+
+}
+.footer__h1{
+
+
+color: #FFFFFF;
+}
+.footer__P{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #666666;
+position: relative;
+top: 10px;
+left: 40px;
+
+}
+.footer__text1{
+    display: flex;
+
+    align-items: center;
+    
+}
+.footer__body{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__p2{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+color: #FFFFFF;
+
+}
+.footer__input{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    height: 5vh;
+    background: #FFFFFF;
+border: 1px solid #CCCCCC;
+box-sizing: border-box;
+border-radius: 0px;
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #666666;
+
+
+}
+.footer__button{
+    background: #000000;
+border-radius: 0px;
+height: 5vh;
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
 }

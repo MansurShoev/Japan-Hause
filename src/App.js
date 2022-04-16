@@ -5,7 +5,6 @@ import About from "./container/About/About";
 import Contacts from "./container/Contacts/Contacts";
 import NoMatch from "./container/NoMatch/NoMatch";
 import UserById from "./container/UserById/UserById";
-import text from "./img/text.png";
 import img1 from "./img/img1.png";
 import Figma from "./components/Figma";
 import img2 from "./img/img2.png";
@@ -15,7 +14,8 @@ import img5 from "./img/img5.png";
 import img6 from "./img/img6.png";
 import img7 from "./img/img7.png";
 import img8 from "./img/img8.png";
-
+import FIgmaFooter from "./components/FIgmaFooter";
+import FigmaTopBody from "./components/FigmaTopBody";
 import Figma2 from "./components/Figma2";
 const figmaCardList = [
   {
@@ -130,39 +130,7 @@ function App() {
  */}
 
       <div className="container">
-        <div className="topBar">
-          <div className="topBar__img">
-            <img src={text} />
-          </div>
-          <div className="topBar__textMenu">
-            <p className="textBar">Home</p>
-            <p className="textBar">Latest</p>
-            <p className="textBar">About</p>
-          </div>
-          <hr />
-        </div>
-        <div className="topBody">
-          <div className="topBody__img">
-            <img className="topBody__img" src={img1} />
-          </div>
-          <div className="topBody__text">
-            <p className="topBody__text0">Illustration</p>
-            <h1 className="topBody__text2">
-              {" "}
-              Japan House opens <br />
-              in mountainside to <br />
-              foster peak <br />
-              creativity.
-            </h1>
-            <p className="topBody__text3">
-              Enim omittam qui id, ex quo atqui dictas complectitur.
-              <br />
-              Nec ad timeam accusata, hinc justo falli id eum, ferri <br />
-              novum molestie eos cu.
-            </p>
-            <p className="topBody__text4">By Reta Torphy</p>
-          </div>
-        </div>
+        <FigmaTopBody />
         <div className="main">
           {figmaCardList.map((element, index) => {
             return (
@@ -224,9 +192,7 @@ function App() {
             <p className="p">view all latest posts</p>
           </div>
         </div>
-        <div className="footer">
-          
-        </div>
+        <FIgmaFooter />
       </div>
     </>
   );
